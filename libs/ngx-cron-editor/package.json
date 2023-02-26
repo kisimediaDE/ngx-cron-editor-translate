@@ -11,9 +11,6 @@
     "name": "Kisimedia.de",
     "email": "cron@kisimedia.de"
   },
-  "scripts": {
-    "build-lib": "ng build && cp -R /src/assets/ dist/ngx-cron-editor/assets"
-  },
   "contributors": [
     "Claudiu Constantin",
     "Eduardo Sarmiento",
