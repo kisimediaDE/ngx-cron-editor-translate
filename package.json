@@ -13,12 +13,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/haavardj/ngx-cron-editor"
+    "url": "git://github.com/kisimediaDE/ngx-cron-editor-translate"
   },
   "bugs": {
-    "url": "https://github.com/haavardj/ngx-cron-editor/issues"
+    "url": "https://github.com/kisimediaDE/ngx-cron-editor-translate/issues"
   },
-  "homepage": "https://github.com/haavardj/ngx-cron-editor",
+  "homepage": "https://github.com/kisimediaDE/ngx-cron-editor-translate",
   "keywords": [
     "angular",
     "cron",
