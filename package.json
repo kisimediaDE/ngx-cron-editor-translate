@@ -1,13 +1,17 @@
 {
-  "name": "ngx-cron-editor",
+  "name": "ngx-cron-editor-translate",
   "description": "A cron expression generator for Angular 6+",
-  "author": "Håvard Dagenborg",
+  "author": {
+    "name": "Kisimedia.de",
+    "email": "cron@kisimedia.de"
+  },
   "contributors": [
     "Claudiu Constantin",
     "Eduardo Sarmiento",
     "Aleksey Yermolenko",
     "Ruslan Lekhman <lekhman112@gmail.com> (https://github.com/lekhmanrus)",
-    "Hannes Oswald <hannes.oswald@prolion.com>"
+    "Hannes Oswald <hannes.oswald@prolion.com>",
+    "Håvard Dagenborg <haavardj@dagenborg.net> (https://github.com/haavardj)"
   ],
   "version": "0.7.6",
   "license": "MIT",
