@@ -1,23 +1,23 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
-import { CronOptions } from 'ngx-cron-editor';
-import { CronGenComponent } from 'ngx-cron-editor';
-import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { CronOptions } from "ngx-cron-editor";
+import { CronGenComponent } from "ngx-cron-editor";
+import { FormBuilder, FormControl, FormGroup } from "@angular/forms";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"],
 })
 export class AppComponent implements OnInit {
-  public cronExpression = '0 0 1/1 * *';
+  public cronExpression = "0 0 1/1 * *";
   public isCronDisabled = false;
   public cronOptions: CronOptions = {
-    formInputClass: 'form-control cron-editor-input',
-    formSelectClass: 'form-control cron-editor-select',
-    formRadioClass: 'cron-editor-radio',
-    formCheckboxClass: 'cron-editor-checkbox',
+    formInputClass: "form-control cron-editor-input",
+    formSelectClass: "form-control cron-editor-select",
+    formRadioClass: "cron-editor-radio",
+    formCheckboxClass: "cron-editor-checkbox",
 
-    defaultTime: '00:00:00',
+    defaultTime: "00:00:00",
 
     hideMinutesTab: false,
     hideHourlyTab: false,
@@ -32,10 +32,12 @@ export class AppComponent implements OnInit {
     use24HourTime: true,
     hideSeconds: false,
 
-    cronFlavor: 'standard'
+    cronFlavor: "standard",
+
+    defaultLanguage: "de",
   };
 
-  @ViewChild('cronEditorDemo')
+  @ViewChild("cronEditorDemo")
   cronEditorDemo: CronGenComponent;
 
   cronForm: FormControl;

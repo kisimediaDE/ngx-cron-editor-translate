@@ -11,6 +11,9 @@
     "name": "Kisimedia.de",
     "email": "cron@kisimedia.de"
   },
+  "scripts": {
+    "build-lib": "ng build && cp -R /src/assets/ dist/ngx-cron-editor/assets"
+  },
   "contributors": [
     "Claudiu Constantin",
     "Eduardo Sarmiento",
@@ -39,7 +42,9 @@
     "@angular/platform-browser": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0",
     "@angular/platform-browser-dynamic": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0",
     "@angular/router": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0",
-    "@angular/material": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0"
+    "@angular/material": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0",
+    "@ngx-translate/core": "^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0",
+    "@ngx-translate/http-loader": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
