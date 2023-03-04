@@ -1,10 +1,7 @@
 {
   "name": "ngx-cron-editor-translate",
-  "description": "A cron expression generator for Angular 6+",
-  "author": {
-    "name": "Kisimedia.de",
-    "email": "cron@kisimedia.de"
-  },
+  "description": "A cron expression generator for Angular 6+ with ngx-translate",
+  "author": "Kisimedia.de",
   "contributors": [
     "Claudiu Constantin",
     "Eduardo Sarmiento",
@@ -13,7 +10,7 @@
     "Hannes Oswald <hannes.oswald@prolion.com>",
     "Håvard Dagenborg <haavardj@dagenborg.net> (https://github.com/haavardj)"
   ],
-  "version": "0.7.6",
+  "version": "0.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -33,13 +30,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build ngx-cron-editor-translate --configuration=production",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "copyhtml": "copyfiles 'src/app/cron-editor/*.html' ./components/cron-editor/",
     "copycss": "copyfiles 'src/app/cron-editor/*.css' ./components/cron-editor/",
-    "pack": "ng-packagr -p package.json & cd dist & npm pack"
+    "pack": "ng-packagr -p package.json & cd dist & npm pack",
+    "publish": "npm run build & cd dist/libs/ngx-cron-editor-translate & npm publish",
+    "pack2": "npm run build & cd dist/libs/ngx-cron-editor-translate & npm pack"
   },
   "dependencies": {
     "@angular/animations": "^15.0.4",

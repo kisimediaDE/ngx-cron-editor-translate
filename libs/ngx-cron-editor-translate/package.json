@@ -53,6 +53,6 @@
         "./src"
       ]
     },
-    "dest": "../../dist/libs/ngx-cron-editor"
+    "dest": "../../dist/libs/ngx-cron-editor-translate"
   }
 }
