@@ -401,15 +401,33 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
   }
 
   public dayDisplay(day: string): string {
-    return Days[day];
+    let dayname = Days[day];
+    this.translateService
+      .get(Days[day].toLowerCase())
+      .subscribe((res: string) => {
+        dayname = res;
+      });
+    return dayname;
   }
 
   public monthWeekDisplay(monthWeekNumber: string): string {
-    return MonthWeeks[monthWeekNumber];
+    let monthWeek = MonthWeeks[monthWeekNumber];
+    this.translateService
+      .get(MonthWeeks[monthWeekNumber].toLowerCase())
+      .subscribe((res: string) => {
+        monthWeek = res;
+      });
+    return monthWeek;
   }
 
   public monthDisplay(month: number): string {
-    return Months[month];
+    let monthname = Months[month];
+    this.translateService
+      .get(Months[month].toLowerCase())
+      .subscribe((res: string) => {
+        monthname = res;
+      });
+    return monthname;
   }
 
   public monthDayDisplay(month: string): string {
@@ -692,23 +710,32 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
   }
 
   private getOrdinalSuffix(value: string) {
+    const language = this.options.defaultLanguage;
     if (value.length > 1) {
       const secondToLastDigit = value.charAt(value.length - 2);
       if (secondToLastDigit === "1") {
-        return "th";
+        if (language === "de") {
+          return ".";
+        } else {
+          return "th";
+        }
       }
     }
 
     const lastDigit = value.charAt(value.length - 1);
-    switch (lastDigit) {
-      case "1":
-        return "st";
-      case "2":
-        return "nd";
-      case "3":
-        return "rd";
-      default:
-        return "th";
+    if (language === "de") {
+      return ".";
+    } else {
+      switch (lastDigit) {
+        case "1":
+          return "st";
+        case "2":
+          return "nd";
+        case "3":
+          return "rd";
+        default:
+          return "th";
+      }
     }
   }
 
