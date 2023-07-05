@@ -9,18 +9,19 @@ Additional to the fork of haavardj I added ngx-translate to the project.
 ## Demo
 
 A work-in-progress demo can be found [here](https://haavardj.github.io/ngx-cron-editor/)
+(This demo is for the old version without translation)
 
 ## Usage
 
 1. Install the npm package:
     ```
-    $ npm i ngx-cron-editor -S
+    $ npm i ngx-cron-editor-translate -S
     ```
 
 2. Import the module in your own module:
 
     ```ts
-    import { CronEditorModule } from 'ngx-cron-editor';
+    import { CronEditorModule } from 'ngx-cron-editor-translate';
 
     @NgModule({
         imports: [..., CronEditorModule],
@@ -54,7 +55,7 @@ A work-in-progress demo can be found [here](https://haavardj.github.io/ngx-cron-
 ```
 
 ```ts
-import { CronOptions } from 'ngx-cron-editor';
+import { CronOptions } from 'ngx-cron-editor-translate';
 
 @Component({
     ...
@@ -77,7 +78,8 @@ export class MyComponent {
        hideSeconds: false,
 
        cronFlavor: "quartz" //standard or quartz
-    };
+       defaultLanguage: "en" // use en or de for translation
+  };
 }
 ```
 
