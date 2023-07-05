@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4]() (2023-07-05)
+* Updated angular from 14 to 15
+* Update changelog
+* Edit readme.md
+* Fix package
 ### [0.0.3]() (2023-03-05)
 * Update changelog
 * Edit readme.md
